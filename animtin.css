@@ -1,0 +1,31 @@
+body , html {
+    height: 100%;
+    
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.element{
+display: inline-block;
+background: linear-gradient(rgb(241, 107, 107), rgb(8, 227, 235));
+width: 100px;
+height: 100px;
+padding: 1px;
+margin-right: 5px;
+margin-left: 5px;
+animation: skew 3s infinite ;
+animation-direction:alternate ;
+transform: skew(20deg);
+opacity: 70%;
+}
+@keyframes skew{
+    0%{
+        transform: skew(20deg,20deg);
+    }
+    100%{
+        transform: skew(-20deg,-20deg);
+    } 
+   
+}
